@@ -93,7 +93,7 @@ const Reset = () => {
             </Center>
             <Box>
                 <Center pt={"lg"}>
-                    <Button as="a" href="/form" colorScheme="primary">戻る</Button>
+                    <Button as="a" href="/gps-test/form/" colorScheme="primary">戻る</Button>
                 </Center>
             </Box>
 

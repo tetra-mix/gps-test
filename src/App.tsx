@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter basename='/gps-test/'>
       <Routes>
-        <Route path="/" element={<Map />} />
+        <Route path="//" element={<Map />} />
         <Route path="/form" element={<Form />} />
         <Route path="/form/add" element={<Add />} />
         <Route path="/form/reset" element={<Reset />} />
