@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Object } from "../types/object";
 import { Polyline } from "react-leaflet";
 
@@ -14,7 +14,10 @@ export const LoadMarker = () => {
       console.log("fetchData");
       const collectionRef = collection(db, "data");
       const collectionSnapshot = await getDocs(collectionRef);
-      const docsId = collectionSnapshot.docs.map(doc => doc.id);
+      const docsId = collectionSnapshot.docs.map(doc => {
+        console.log("doc.id", doc.id);
+        return doc.id;
+      });
       console.log("docsId", docsId);
       const docs = await Promise.all(docsId.map(async (id) => {
         const docRef = collection(db, "data", id, "log");
