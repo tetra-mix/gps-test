@@ -1,4 +1,5 @@
 {
+  "homepage": "https://tetra-mix.github.io/gps-test/",
   "name": "taikentankentai-vite",
   "private": true,
   "version": "0.0.0",
@@ -6,12 +7,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@yamada-ui/react": "^1.7.5",
     "firebase": "^11.3.1",
+    "gh-pages": "^6.3.0",
     "leaflet": "^1.9.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
