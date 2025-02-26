@@ -22,7 +22,6 @@ export const Map = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <ForLoadMaker />
-            <LoadMarker />
             <ClickEvent />
             <SearchBox />
             {

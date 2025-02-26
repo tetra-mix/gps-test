@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { Button, Image, Flex, Textarea, FileButton, Box, Heading, IconButton } from "@yamada-ui/react";
 import {uploadStorage} from "../firebase/strorage";
 import { FaImage } from "react-icons/fa";
-import { colorMarker } from "./maker";
 
 export const ClickEvent = () =>{
   let loc = new L.LatLng(0,0);
