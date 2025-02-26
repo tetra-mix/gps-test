@@ -1,5 +1,5 @@
 
-import { MapContainer, TileLayer, Polyline } from 'react-leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
 import { LatLng } from "leaflet";
 import { ForLoadMaker } from '../components/ForLoadMaker';
 import { Button,Text } from '@yamada-ui/react';
@@ -21,7 +21,6 @@ const Map = ()=> {
                 <Text color="whiteAlpha.900">フォーム</Text>
             </Button>
             <LoadMarker />
-            <Polyline pathOptions={{ color: 'red' }} positions={[{ lat: 51.47699329882074, lng: -0.00047874473041221245 }, { lat: 35.681236, lng: 139.767125 }]} />        
         </MapContainer>
     )
 }

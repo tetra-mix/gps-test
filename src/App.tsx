@@ -8,7 +8,7 @@ import Form from './pages/form';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/gps-test/'>
       <Routes>
         <Route path="/" element={<Map />} />
         <Route path="/form" element={<Form />} />
