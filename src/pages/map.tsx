@@ -1,15 +1,14 @@
-"use client";
+
 import { MapContainer, TileLayer, Polyline } from 'react-leaflet';
 import { LatLng } from "leaflet";
-import { ForLoadMaker } from './ForLoadMaker';
+import { ForLoadMaker } from '../components/ForLoadMaker';
 import { Button,Text } from '@yamada-ui/react';
 import "leaflet/dist/leaflet.css";
-import { LoadMarker } from './LoadMarker';
+import { LoadMarker } from '../components/LoadMarker';
 
 
-export const Map = ()=> {
+const Map = ()=> {
     const position = new LatLng(51.47699329882074, -0.00047874473041221245);
-    const pushed = () => { console.log("pushed") }
 
     return (
         <MapContainer center={position} zoom={3}>
@@ -26,3 +25,5 @@ export const Map = ()=> {
         </MapContainer>
     )
 }
+
+export default Map;

@@ -1,7 +1,6 @@
-"use client";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { FormControl, Input, Textarea, Center, Container, Box, Button, Alert, AlertIcon, AlertTitle, AlertDescription } from '@yamada-ui/react';
+import { FormControl, Input, Center, Container, Box, Button, Alert, AlertIcon, AlertTitle, AlertDescription } from '@yamada-ui/react';
 
 
 type Data = {
