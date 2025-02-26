@@ -12,8 +12,8 @@ L.Icon.Default.mergeOptions({
 // カラーマーカーの作成
 export const colorMarker = (color: string): L.Icon<IconOptions> => {
   return L.icon({
-    iconUrl: icon,
-    shadowUrl: iconShadow,
+    iconUrl: icon.src,
+    shadowUrl: iconShadow.src,
     className: `default-marker ${color}`,
   });
 };

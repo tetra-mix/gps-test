@@ -6,6 +6,6 @@ export const ForLoadMaker = () => {
     const [isOk ] = useState(false);
 
     return (
-            isOk ? <Marker position={{ lat: 0, lng: 0 }} icon={colorMarker("red")} /> : <></>
+            isOk ? <Marker position={{ lat: 0, lng: 0 }} icon={colorMarker("red") ?? undefined} /> : <></>
     );
 }
